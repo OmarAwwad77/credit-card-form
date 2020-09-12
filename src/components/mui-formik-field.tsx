@@ -46,7 +46,7 @@ const MuiFormikField: React.FC<Props> = (props) => {
 		if (val === lastValue.current) return;
 		lastValue.current = val;
 		setValueCached(val);
-	}, [value, setValueCached]);
+	}, [value, setValueCached, as]);
 
 	return (
 		<TextField
